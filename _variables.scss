@@ -15,10 +15,10 @@ $c-button-secondary-text: #{$c-black};
 
 //p
 @mixin primary-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 500, 700;
   font-style: normal;
-  font-size: 1em;
+  font-size: 1.125em;
   text-align: left;
   //double check below font
   padding: 10px 0;
