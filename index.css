@@ -1,1 +1,3 @@
-/*# sourceMappingURL=index.css.map */
+/*order of import does matter*/
+/* order of this allows base file to know variables*/
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");/*# sourceMappingURL=index.css.map */
