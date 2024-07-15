@@ -1,0 +1,97 @@
+//theme colors
+$c-black: #000000;
+$c-white: #ffffff;
+
+//background colors
+$c-background-white: #{$c-white};
+
+//primary button
+$c-button-primary: #{$c-black};
+$c-button-secondary: #{$c-white};
+
+//button text
+$c-button-primary-text: #{$c-white};
+$c-button-secondary-text: #{$c-black};
+
+//p
+@mixin primary-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  text-align: left;
+  //double check below font
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+
+//h4
+@mixin secondary-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.25em;
+}
+
+//h3
+@mixin tertiary-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.5em;
+  padding: 0px 0 10px 0; //may need to change
+  color: $c-coral;
+}
+
+//h2
+@mixin quaternary-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.75em;
+  padding: 10px 0 10px 0;
+}
+
+//h1
+@mixin quinary-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 3em;
+  padding: 10px 0 10px 0;
+}
+
+@mixin button {
+  background-color: coral;
+  border: none;
+  display: flex;
+  margin: 20px auto 60px auto;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    margin: 25px auto;
+  }
+}
+
+@mixin button-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5em;
+  padding: 10px;
+  color: $c-button-primary-text;
+}
+
+@mixin lightTheme {
+  background-color: $c-background-white;
+  color: $c-black;
+  button {
+    color: $c-button-primary;
+  }
+}
+
+@mixin darkTheme {
+  background-color: $c-background-black;
+  color: $c-white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
