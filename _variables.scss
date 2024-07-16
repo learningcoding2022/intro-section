@@ -16,51 +16,36 @@ $c-button-secondary-text: #{$c-black};
 //p
 @mixin primary-text {
   font-family: 'Epilogue', sans-serif;
-  font-weight: 500, 700;
+  font-weight: 500;
   font-style: normal;
   font-size: 1.125em;
   text-align: left;
   //double check below font
   padding: 10px 0;
   letter-spacing: 1px;
+  color: $c-black;
 }
 
-//h4
+//need to pick up working here....needs styling for other text"
+//h1
 @mixin secondary-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: bold;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 700;
   font-style: normal;
-  font-size: 1.25em;
-}
-
-//h3
-@mixin tertiary-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 2.5em;
-  padding: 0px 0 10px 0; //may need to change
-  color: $c-coral;
+  font-size: 4em;
+  color: $c-black;
 }
 
 //h2
-@mixin quaternary-text {
-  font-family: 'Inter', sans-serif;
+@mixin tertiary-text {
+  font-family: 'Epilogue', sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 2.75em;
-  padding: 10px 0 10px 0;
+  font-size: 3.5em;
+  color: $c-black;
 }
 
-//h1
-@mixin quinary-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: bolder;
-  font-style: normal;
-  font-size: 3em;
-  padding: 10px 0 10px 0;
-}
-
+//pick up here
 @mixin button {
   background-color: coral;
   border: none;
