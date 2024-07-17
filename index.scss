@@ -29,18 +29,19 @@ body {
     font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: space-between;
+  }
 
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-icons-1 {
     li {
-      color: aquamarine;
       list-style-type: none;
       a {
         text-decoration: none;
       }
     }
-  }
-
-  .nav-toggle {
-    display: flex;
   }
 
   a {
