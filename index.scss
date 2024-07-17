@@ -36,10 +36,12 @@ body {
   }
 
   .nav-icons-1 {
-    li {
-      list-style-type: none;
-      a {
-        text-decoration: none;
+    ul {
+      li {
+        list-style-type: none;
+        a {
+          text-decoration: none;
+        }
       }
     }
   }

@@ -28,10 +28,10 @@ body {
 .navbar .nav-toggle {
   display: flex;
 }
-.navbar .nav-icons-1 li {
+.navbar .nav-icons-1 ul li {
   list-style-type: none;
 }
-.navbar .nav-icons-1 li a {
+.navbar .nav-icons-1 ul li a {
   text-decoration: none;
 }
 .navbar a {
