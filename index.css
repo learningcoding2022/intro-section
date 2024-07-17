@@ -25,15 +25,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.navbar ul li {
-  color: aquamarine;
-  list-style-type: none;
-}
-.navbar ul li a {
-  text-decoration: none;
-}
 .navbar .nav-toggle {
   display: flex;
+}
+.navbar .nav-icons-1 li {
+  list-style-type: none;
+}
+.navbar .nav-icons-1 li a {
+  text-decoration: none;
 }
 .navbar a {
   padding: 1em;
