@@ -11,36 +11,24 @@ body {
   font-family: "Epilogue", sans-serif;
   padding: 0px 20px;
   margin: unset;
+  display: flex;
+  background-color: aqua;
 }
 
-.navbar {
+.navigation-wrapper {
   position: relative;
   padding-top: 30px;
 }
-.navbar ul {
-  margin: unset;
-  padding: unset;
-  color: aqua;
-  font-family: "Inter", sans-serif;
-  display: flex;
-  justify-content: space-between;
-}
-.navbar .nav-toggle {
+.navigation-wrapper .nav-toggle {
   display: flex;
 }
-.navbar .nav-icons-1 ul li {
-  list-style-type: none;
-}
-.navbar .nav-icons-1 ul li a {
-  text-decoration: none;
-}
-.navbar a {
+.navigation-wrapper a {
   padding: 1em;
   color: inherit;
   text-decoration: none;
   display: inline-block;
 }
-.navbar .hamburger {
+.navigation-wrapper .hamburger {
   position: absolute;
   top: 10px;
   right: 0;
@@ -50,8 +38,21 @@ body {
   cursor: pointer;
   display: none;
 }
-.navbar .hamburger .icon-close {
+.navigation-wrapper .hamburger .icon-close {
   display: none;
+}
+
+header figure {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+}
+@media (min-width: 1200px) {
+  header figure {
+    max-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -77,24 +78,6 @@ body {
     display: block;
   }
 }
-button {
-  background-color: #000000;
-  border: none;
-  display: flex;
-  margin: 20px auto 60px auto;
-  justify-content: center;
-  font-family: "Epilogue", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.125em;
-  padding: 10px;
-}
-@media (min-width: 1200px) {
-  button {
-    margin: 25px auto;
-  }
-}
-
 p {
   font-family: "Epilogue", sans-serif;
   font-weight: 500;
@@ -107,8 +90,10 @@ p {
 }
 
 @media (min-width: 1200px) {
-  .hero-content button {
+  .content button {
     padding-top: 30px;
+    background-color: #000000;
+    color: #ffffff;
   }
 }
 
