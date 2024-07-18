@@ -10,7 +10,6 @@
 body {
   font-family: "Epilogue", sans-serif;
   padding: 0px 20px;
-  margin: unset;
   display: flex;
   background-color: aqua;
 }
