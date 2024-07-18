@@ -16,7 +16,7 @@ body {
   margin: unset;
 }
 
-.navigation {
+.navigation-wrapper {
   position: relative;
   padding-top: 30px;
 
@@ -31,17 +31,6 @@ body {
 
   .nav-toggle {
     display: flex;
-  }
-
-  .nav-icons-1 {
-    ul {
-      li {
-        list-style-type: none;
-        a {
-          text-decoration: none;
-        }
-      }
-    }
   }
 
   a {
@@ -68,6 +57,17 @@ body {
 
   .hamburger .icon-close {
     display: none;
+  }
+}
+
+.container figure {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+
+  @media (min-width: 1200px) {
+    max-height: 200px;
+    object-fit: cover;
   }
 }
 
@@ -101,9 +101,15 @@ body {
   }
 }
 
-button {
-  @include button();
-  @include button-text();
+figure {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+
+  @media (min-width: 1200px) {
+    max-height: 200px;
+    object-fit: cover;
+  }
 }
 
 p {
