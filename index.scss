@@ -13,7 +13,6 @@ body {
 
 .navigation-wrapper {
   position: relative;
-  padding-top: 30px;
 
   ul {
     margin: unset;
@@ -23,11 +22,7 @@ body {
     list-style-type: none;
   }
 
-  .nav-icons-1 {
-    display: flex;
-  }
-
-  .nav-icons-2 {
+  .nav-icons {
     display: flex;
   }
 
@@ -39,12 +34,13 @@ body {
   }
 
   a:hover {
+    //add hover effect here
   }
 
   .hamburger {
     position: absolute;
-    top: 10px;
-    right: 0;
+    top: -5px;
+    right: 5px;
     margin: 0px;
     border: unset;
     background: unset;
@@ -81,19 +77,19 @@ body {
 }
 
 @media screen and (max-width: 650px) {
-  .navigation-wrapper ul {
+  .navigation-wrapper.open ul {
     display: block;
   }
 
-  .navigation-wrapper .nav-icons-1 {
+  .navigation-wrapper.open .nav-toggle {
     display: block;
   }
 
-  .navigation-wrapper a {
+  .navigation-wrapper.open a {
     display: block;
   }
 
-  .navigation-wrapper .nav-icons-1 {
+  .navigation-wrapper .nav-toggle {
     display: none;
   }
 
@@ -101,11 +97,11 @@ body {
     display: block;
   }
 
-  .navbar.open .hamburger .icon-open {
+  .navigation-wrapper.open .hamburger .icon-open {
     display: none;
   }
 
-  .navbar.open .hamburger .icon-close {
+  .navigation-wrapper.open .hamburger .icon-close {
     display: block;
   }
 }
