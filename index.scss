@@ -7,7 +7,8 @@
 body {
   font-family: 'Epilogue', sans-serif;
   display: flex;
-  background-color: aqua;
+  background-color: lavender;
+  margin: 0;
 }
 
 .navigation-wrapper {
@@ -54,7 +55,19 @@ body {
   }
 }
 
-.container figure {
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  .content-logos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 100px 20px;
+  }
+}
+
+#hero-image.image-div img {
   width: 100%;
   height: auto;
   padding-top: 30px;
@@ -97,10 +110,12 @@ body {
 
 p {
   @include primary-text();
+  text-align: center;
 }
 
-.hero-image button {
-  background-color: black;
+button.buttons {
+  @include button();
+  @include button-text();
   @media (min-width: 1200px) {
     padding-top: 30px;
   }

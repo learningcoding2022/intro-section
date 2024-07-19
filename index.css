@@ -4,7 +4,8 @@
 body {
   font-family: "Epilogue", sans-serif;
   display: flex;
-  background-color: aqua;
+  background-color: lavender;
+  margin: 0;
 }
 
 .navigation-wrapper {
@@ -42,13 +43,25 @@ body {
   display: none;
 }
 
-.container figure {
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.content .content-logos {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 100px 20px;
+}
+
+#hero-image.image-div img {
   width: 100%;
   height: auto;
   padding-top: 30px;
 }
 @media (min-width: 1200px) {
-  .container figure {
+  #hero-image.image-div img {
     max-height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -84,16 +97,33 @@ p {
   font-style: normal;
   font-size: 1.125em;
   text-align: left;
-  padding: 10px 0;
+  margin: 0px 20px;
   letter-spacing: 1px;
   color: #000000;
+  line-height: 1.5;
+  text-align: center;
 }
 
-.hero-image button {
-  background-color: black;
+button.buttons {
+  background-color: #000000;
+  border: none;
+  display: flex;
+  margin: 50px auto 70px auto;
+  justify-content: center;
+  font-family: "Epilogue", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125em;
+  padding: 10px;
 }
 @media (min-width: 1200px) {
-  .hero-image button {
+  button.buttons {
+    margin: 25px auto;
+  }
+}
+@media (min-width: 1200px) {
+  button.buttons {
     padding-top: 30px;
   }
 }
@@ -102,8 +132,9 @@ h1 {
   font-family: "Epilogue", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 4em;
+  font-size: 3em;
   color: #000000;
+  margin: 50px 0 30px 0;
 }
 @media (min-width: 1200px) {
   h1 {

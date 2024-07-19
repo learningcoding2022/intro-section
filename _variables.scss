@@ -21,9 +21,10 @@ $c-button-secondary-text: #{$c-black};
   font-size: 1.125em;
   text-align: left;
   //double check below font
-  padding: 10px 0;
+  margin: 0px 20px;
   letter-spacing: 1px;
   color: $c-black;
+  line-height: 1.5;
 }
 
 //need to pick up working here....needs styling for other text"
@@ -32,8 +33,9 @@ $c-button-secondary-text: #{$c-black};
   font-family: 'Epilogue', sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 4em;
+  font-size: 3em;
   color: $c-black;
+  margin: 50px 0 30px 0;
 }
 
 //h2
@@ -50,7 +52,7 @@ $c-button-secondary-text: #{$c-black};
   background-color: $c-black;
   border: none;
   display: flex;
-  margin: 20px auto 60px auto;
+  margin: 50px auto 70px auto;
   justify-content: center;
   @media (min-width: 1200px) {
     margin: 25px auto;
@@ -59,6 +61,7 @@ $c-button-secondary-text: #{$c-black};
 
 @mixin button-text {
   font-family: 'Epilogue', sans-serif;
+  color: white;
   font-weight: 500;
   font-style: normal;
   font-size: 1.125em;
