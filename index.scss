@@ -19,11 +19,15 @@ body {
     margin: unset;
     padding: unset;
     font-family: 'Inter', sans-serif;
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    list-style-type: none;
   }
 
-  .nav-toggle {
+  .nav-icons-1 {
+    display: flex;
+  }
+
+  .nav-icons-2 {
     display: flex;
   }
 
@@ -35,7 +39,6 @@ body {
   }
 
   a:hover {
-    //color: $c-coral;
   }
 
   .hamburger {
@@ -78,23 +81,23 @@ body {
 }
 
 @media screen and (max-width: 650px) {
-  .navbar.open ul {
+  .navigation-wrapper ul {
     display: block;
   }
 
-  .navbar.open .nav-toggle {
+  .navigation-wrapper .nav-icons-1 {
     display: block;
   }
 
-  .navbar.open a {
+  .navigation-wrapper a {
     display: block;
   }
 
-  .navbar .nav-toggle {
+  .navigation-wrapper .nav-icons-1 {
     display: none;
   }
 
-  .navbar .hamburger {
+  .navigation-wrapper .hamburger {
     display: block;
   }
 
