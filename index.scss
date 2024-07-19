@@ -2,17 +2,10 @@
 /* order of this allows base file to know variables*/
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 @import './variables';
-@import './components';
 
-/* reset styles */
-* {
-  color: inherit;
-  margin: 0;
-}
-
+//this is not applying to the page
 body {
   font-family: 'Epilogue', sans-serif;
-  padding: 0px 20px;
   display: flex;
   background-color: aqua;
 }
@@ -20,6 +13,15 @@ body {
 .navigation-wrapper {
   position: relative;
   padding-top: 30px;
+
+  ul {
+    margin: unset;
+    padding: unset;
+    color: aqua;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
 
   .nav-toggle {
     display: flex;
@@ -52,7 +54,7 @@ body {
   }
 }
 
-header figure {
+.container figure {
   width: 100%;
   height: auto;
   padding-top: 30px;
@@ -97,11 +99,10 @@ p {
   @include primary-text();
 }
 
-.content button {
+.hero-image button {
+  background-color: black;
   @media (min-width: 1200px) {
     padding-top: 30px;
-    background-color: $c-black;
-    color: $c-white;
   }
 }
 

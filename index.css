@@ -1,15 +1,8 @@
 /*order of import does matter*/
 /* order of this allows base file to know variables*/
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
-/* reset styles */
-* {
-  color: inherit;
-  margin: 0;
-}
-
 body {
   font-family: "Epilogue", sans-serif;
-  padding: 0px 20px;
   display: flex;
   background-color: aqua;
 }
@@ -17,6 +10,14 @@ body {
 .navigation-wrapper {
   position: relative;
   padding-top: 30px;
+}
+.navigation-wrapper ul {
+  margin: unset;
+  padding: unset;
+  color: aqua;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-between;
 }
 .navigation-wrapper .nav-toggle {
   display: flex;
@@ -41,13 +42,13 @@ body {
   display: none;
 }
 
-header figure {
+.container figure {
   width: 100%;
   height: auto;
   padding-top: 30px;
 }
 @media (min-width: 1200px) {
-  header figure {
+  .container figure {
     max-height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -88,11 +89,12 @@ p {
   color: #000000;
 }
 
+.hero-image button {
+  background-color: black;
+}
 @media (min-width: 1200px) {
-  .content button {
+  .hero-image button {
     padding-top: 30px;
-    background-color: #000000;
-    color: #ffffff;
   }
 }
 
