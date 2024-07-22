@@ -21,6 +21,15 @@ body {
 }
 .navbar .nav-icons {
   display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .navbar a {
   padding: 1em;
